@@ -4,6 +4,7 @@
  #include <iostream>
  using namespace std;
 
+ //Grandparents, sibling, and uncle are impelmented within class
  
  class Node {
   public:
@@ -14,7 +15,7 @@
    Node* getRight();
    Node* getParent();
    Node* getGrandparent();
-   Node& getUncle();
+   Node* getUncle();
    Node* getSibling();
    void setValue(int newvalue);
    void setColor(int newcolor);
