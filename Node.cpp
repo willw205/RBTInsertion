@@ -2,6 +2,8 @@
  #include "Node.h"
  using namespace std;
 
+ //below is the pass through value
+
  Node :: Node(int newvalue){
    value = newvalue;
    color = 2;
@@ -34,6 +36,8 @@
    return parent->getParent();
  }
 
+ //below gets other child
+
  Node* Node :: getSibling(){
    if (parent == NULL){
      return NULL;
@@ -45,6 +49,8 @@
      return parent->getRight();
    }
  }
+
+ //below is parents sibling
 
  Node* Node :: getUncle(){
    if (parent == NULL){
